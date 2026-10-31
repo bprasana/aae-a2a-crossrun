@@ -1,0 +1,76 @@
+{
+  "aae_jws_sha256": "4f45320abc0a71de5aaa80bb1bb617db392b1e80a878992dea4a001dfc238639",
+  "aae_variant": "valid",
+  "activate": true,
+  "case_id": "XR-04",
+  "challenge_nonce": "g59LU0Wj4Ez-4O4BAwVFKQ.1793391600.KRCpcZQUHfbwMLlXHq0K126is2cwZLgXyFCN6Do3SaY",
+  "challenge_response_variant": "valid",
+  "receiver_result": {
+    "kind": "task",
+    "result": {
+      "aae_id": "urn:uuid:fde73a50-cba3-5b34-abd4-976d440d2516",
+      "action": "pay",
+      "draft": "draft-kroehl-agentic-trust-aae-02",
+      "issuer": "did:example:issuer",
+      "request_digest": "sha256:20673ecb3bc45abe8dd1aa5455aa90397eb769e42f9af1cff56680f4204eb0c1",
+      "skill": "place-order",
+      "steps_passed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "subject": "did:example:buyer",
+      "verdict": "ACCEPT",
+      "verified_at": "2026-10-30T20:15:00Z"
+    },
+    "skill_invoked": true,
+    "skill_outcome": "succeeded",
+    "task_id": "task-9e4f1e48-402a-5887-bdbc-de2eecc2c409",
+    "task_state": "TASK_STATE_COMPLETED"
+  },
+  "request_part": {
+    "skill": "place-order",
+    "transaction": {
+      "amount": 120.0,
+      "currency": "EUR",
+      "note": "B\u00fcrobedarf",
+      "unit_price": 6.25
+    }
+  },
+  "scored": {
+    "case_id": "XR-04",
+    "expected": {
+      "kind": "task",
+      "request_digest": "sha256:20673ecb3bc45abe8dd1aa5455aa90397eb769e42f9af1cff56680f4204eb0c1",
+      "task_state": "TASK_STATE_COMPLETED",
+      "verdict": "ACCEPT"
+    },
+    "notes": [],
+    "pass": true,
+    "receiver": {
+      "jsonrpc_code": null,
+      "kind": "task",
+      "reason_code": null,
+      "request_digest": "sha256:20673ecb3bc45abe8dd1aa5455aa90397eb769e42f9af1cff56680f4204eb0c1",
+      "skill_invoked": true,
+      "step": null,
+      "steps_passed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "task_id": "task-9e4f1e48-402a-5887-bdbc-de2eecc2c409",
+      "task_state": "TASK_STATE_COMPLETED",
+      "verdict": "ACCEPT"
+    },
+    "title": "request_digest canonicalization: member order, 120.0, a fraction, non-ASCII (vector B.2)"
+  }
+}

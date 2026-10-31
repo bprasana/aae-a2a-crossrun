@@ -1,0 +1,55 @@
+{
+  "aae_jws_sha256": "47df4f499ec892ecb435777bad24b128c2dea72f214a3d91cc202ccfe140b002",
+  "aae_variant": "read_only",
+  "activate": true,
+  "case_id": "XR-10",
+  "challenge_nonce": "cc1se310NYczKEBGVYmJAA.1793391600.B6MCLvICabBht4gnvNae_ePVhAg83yyqxryx5xNaX00",
+  "challenge_response_variant": "valid",
+  "receiver_result": {
+    "kind": "task",
+    "result": {
+      "draft": "draft-kroehl-agentic-trust-aae-02",
+      "reason_code": "action_not_in_mandate",
+      "request_digest": "sha256:7081684b67799fdd4045a25d028f770a8254746ff279dbabb0486bdb7eeb4176",
+      "step": 6,
+      "step_name": "action",
+      "verdict": "REJECT"
+    },
+    "skill_invoked": false,
+    "task_id": "task-8027d2e1-5d9e-59f1-9cee-471fa858913a",
+    "task_state": "TASK_STATE_REJECTED"
+  },
+  "request_part": {
+    "skill": "place-order",
+    "transaction": {
+      "amount": 120,
+      "currency": "EUR"
+    }
+  },
+  "scored": {
+    "case_id": "XR-10",
+    "expected": {
+      "kind": "task",
+      "reason_code": "action_not_in_mandate",
+      "request_digest": "sha256:7081684b67799fdd4045a25d028f770a8254746ff279dbabb0486bdb7eeb4176",
+      "step": 6,
+      "task_state": "TASK_STATE_REJECTED",
+      "verdict": "REJECT"
+    },
+    "notes": [],
+    "pass": true,
+    "receiver": {
+      "jsonrpc_code": null,
+      "kind": "task",
+      "reason_code": "action_not_in_mandate",
+      "request_digest": "sha256:7081684b67799fdd4045a25d028f770a8254746ff279dbabb0486bdb7eeb4176",
+      "skill_invoked": false,
+      "step": 6,
+      "steps_passed": null,
+      "task_id": "task-8027d2e1-5d9e-59f1-9cee-471fa858913a",
+      "task_state": "TASK_STATE_REJECTED",
+      "verdict": "REJECT"
+    },
+    "title": "Mandate without the pay action"
+  }
+}

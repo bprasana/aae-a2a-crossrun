@@ -1,0 +1,44 @@
+{
+  "aae_jws_sha256": "c21355c029e959fcc6c7165a609bbe02dbb420ed31e6b891ea5a2805a4ac0962",
+  "aae_variant": "valid",
+  "activate": false,
+  "case_id": "XR-12",
+  "challenge_nonce": null,
+  "challenge_response_variant": "valid",
+  "receiver_result": {
+    "jsonrpc_code": -32008,
+    "kind": "error",
+    "result": null,
+    "task_id": null,
+    "task_state": null
+  },
+  "request_part": {
+    "skill": "place-order",
+    "transaction": {
+      "amount": 120,
+      "currency": "EUR"
+    }
+  },
+  "scored": {
+    "case_id": "XR-12",
+    "expected": {
+      "jsonrpc_code": -32008,
+      "kind": "error"
+    },
+    "notes": [],
+    "pass": true,
+    "receiver": {
+      "jsonrpc_code": -32008,
+      "kind": "error",
+      "reason_code": null,
+      "request_digest": null,
+      "skill_invoked": null,
+      "step": null,
+      "steps_passed": null,
+      "task_id": null,
+      "task_state": null,
+      "verdict": null
+    },
+    "title": "Extension not activated, card says required"
+  }
+}

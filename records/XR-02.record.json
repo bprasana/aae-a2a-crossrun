@@ -1,0 +1,80 @@
+{
+  "aae_jws_sha256": "10940da9e6f9061b7fa4bda5567f7c067555f771f415883275ebde5cf509d7cb",
+  "aae_variant": "valid",
+  "activate": true,
+  "case_id": "XR-02",
+  "challenge_nonce": "u_2HQcRWVZnRBJMQhp9WLg.1793391600.b_OkVe3HWzo0vyF0VK1M-Oene9oDv-XJ1DEnagBMhQU",
+  "challenge_response_variant": "valid",
+  "receiver_result": {
+    "kind": "task",
+    "result": {
+      "aae_id": "urn:uuid:da6fbc7b-e2f9-5353-8c0e-6de4660ae955",
+      "action": "pay",
+      "draft": "draft-kroehl-agentic-trust-aae-02",
+      "issuer": "did:example:issuer",
+      "request_digest": "sha256:97ff82c176abd81ff1260c0885e3e25c2e651f153c6f4bcb8c6263e77d55198b",
+      "skill": "place-order",
+      "steps_passed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "subject": "did:example:buyer",
+      "verdict": "ACCEPT",
+      "verified_at": "2026-10-30T20:15:00Z"
+    },
+    "skill_invoked": true,
+    "skill_outcome": "failed",
+    "task_id": "task-9578adbb-8b6a-54c6-a0ce-1a3d139466ec",
+    "task_state": "TASK_STATE_FAILED"
+  },
+  "request_part": {
+    "skill": "place-order",
+    "transaction": {
+      "amount": 80,
+      "currency": "EUR",
+      "items": [
+        {
+          "qty": 1,
+          "sku": "DESK-02"
+        }
+      ]
+    }
+  },
+  "scored": {
+    "case_id": "XR-02",
+    "expected": {
+      "kind": "task",
+      "request_digest": "sha256:97ff82c176abd81ff1260c0885e3e25c2e651f153c6f4bcb8c6263e77d55198b",
+      "task_state": "TASK_STATE_FAILED",
+      "verdict": "ACCEPT"
+    },
+    "notes": [],
+    "pass": true,
+    "receiver": {
+      "jsonrpc_code": null,
+      "kind": "task",
+      "reason_code": null,
+      "request_digest": "sha256:97ff82c176abd81ff1260c0885e3e25c2e651f153c6f4bcb8c6263e77d55198b",
+      "skill_invoked": true,
+      "step": null,
+      "steps_passed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "task_id": "task-9578adbb-8b6a-54c6-a0ce-1a3d139466ec",
+      "task_state": "TASK_STATE_FAILED",
+      "verdict": "ACCEPT"
+    },
+    "title": "Paired case, accepted: the skill fails after the AAE check (spec 8.3)"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "aae_jws_sha256": "d8bdfe4fd198880cea32c94692cbcadf09ec072e81c24ac5af842b36ddf8cc8f",
+  "aae_variant": "valid",
+  "activate": true,
+  "case_id": "XR-09",
+  "challenge_nonce": "5ufkZTROYT1nqXYITkcWrQ.1793391600.x7Exk_hatlW5Ksbxg9-eefJix7CCzzZD9Iuve-QSYY8",
+  "challenge_response_variant": "wrong_key",
+  "receiver_result": {
+    "kind": "task",
+    "result": {
+      "draft": "draft-kroehl-agentic-trust-aae-02",
+      "reason_code": "challenge_signature_invalid",
+      "request_digest": "sha256:7081684b67799fdd4045a25d028f770a8254746ff279dbabb0486bdb7eeb4176",
+      "step": 4,
+      "step_name": "subject_binding",
+      "verdict": "REJECT"
+    },
+    "skill_invoked": false,
+    "task_id": "task-87211ccc-2281-523d-b805-df5873459224",
+    "task_state": "TASK_STATE_REJECTED"
+  },
+  "request_part": {
+    "skill": "place-order",
+    "transaction": {
+      "amount": 120,
+      "currency": "EUR"
+    }
+  },
+  "scored": {
+    "case_id": "XR-09",
+    "expected": {
+      "kind": "task",
+      "reason_code": "challenge_signature_invalid",
+      "request_digest": "sha256:7081684b67799fdd4045a25d028f770a8254746ff279dbabb0486bdb7eeb4176",
+      "step": 4,
+      "task_state": "TASK_STATE_REJECTED",
+      "verdict": "REJECT"
+    },
+    "notes": [],
+    "pass": true,
+    "receiver": {
+      "jsonrpc_code": null,
+      "kind": "task",
+      "reason_code": "challenge_signature_invalid",
+      "request_digest": "sha256:7081684b67799fdd4045a25d028f770a8254746ff279dbabb0486bdb7eeb4176",
+      "skill_invoked": false,
+      "step": 4,
+      "steps_passed": null,
+      "task_id": "task-87211ccc-2281-523d-b805-df5873459224",
+      "task_state": "TASK_STATE_REJECTED",
+      "verdict": "REJECT"
+    },
+    "title": "Challenge response signed with a key that is not the subject's"
+  }
+}

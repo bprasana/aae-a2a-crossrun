@@ -1,0 +1,80 @@
+{
+  "aae_jws_sha256": "723b47910c9e859e5d7f9e07d368ccfb6ca2249fb39b193f5605de6397b2c7eb",
+  "aae_variant": "valid",
+  "activate": true,
+  "case_id": "XR-01",
+  "challenge_nonce": "5y_QcvERmc_QmcURkDyB8w.1793391600.gcWOwyNUdlNOkWbcvhV0W6Qgh0NWWhM3StJS4kDMoV8",
+  "challenge_response_variant": "valid",
+  "receiver_result": {
+    "kind": "task",
+    "result": {
+      "aae_id": "urn:uuid:6078df27-d9b4-5902-9e79-a4d192d1176c",
+      "action": "pay",
+      "draft": "draft-kroehl-agentic-trust-aae-02",
+      "issuer": "did:example:issuer",
+      "request_digest": "sha256:84559612f1f46ec0a03f8c448905af075ba4edf66e529b15b50f69c85a68b59a",
+      "skill": "place-order",
+      "steps_passed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "subject": "did:example:buyer",
+      "verdict": "ACCEPT",
+      "verified_at": "2026-10-30T20:15:00Z"
+    },
+    "skill_invoked": true,
+    "skill_outcome": "succeeded",
+    "task_id": "task-616f826d-d1e2-5a82-8b28-8cabbf7d20d9",
+    "task_state": "TASK_STATE_COMPLETED"
+  },
+  "request_part": {
+    "skill": "place-order",
+    "transaction": {
+      "amount": 120,
+      "currency": "EUR",
+      "items": [
+        {
+          "qty": 20,
+          "sku": "PAPER-A4"
+        }
+      ]
+    }
+  },
+  "scored": {
+    "case_id": "XR-01",
+    "expected": {
+      "kind": "task",
+      "request_digest": "sha256:84559612f1f46ec0a03f8c448905af075ba4edf66e529b15b50f69c85a68b59a",
+      "task_state": "TASK_STATE_COMPLETED",
+      "verdict": "ACCEPT"
+    },
+    "notes": [],
+    "pass": true,
+    "receiver": {
+      "jsonrpc_code": null,
+      "kind": "task",
+      "reason_code": null,
+      "request_digest": "sha256:84559612f1f46ec0a03f8c448905af075ba4edf66e529b15b50f69c85a68b59a",
+      "skill_invoked": true,
+      "step": null,
+      "steps_passed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "task_id": "task-616f826d-d1e2-5a82-8b28-8cabbf7d20d9",
+      "task_state": "TASK_STATE_COMPLETED",
+      "verdict": "ACCEPT"
+    },
+    "title": "Order inside the mandate (request part of spec 6.1)"
+  }
+}

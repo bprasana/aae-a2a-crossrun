@@ -1,0 +1,81 @@
+{
+  "aae_jws_sha256": "89497ad956be24ef634643f9b7af361839bc1289da72f442253a32f389575f6f",
+  "aae_variant": "valid",
+  "activate": true,
+  "case_id": "XR-06",
+  "challenge_nonce": "V-iCIhS5EE9QErYhRzTVlA.1793391600.tp1ECZZBTQzjvVRdWlDE2Y0YmYWYIB878BMMKXWfGGA",
+  "challenge_response_variant": "valid",
+  "receiver_result": {
+    "kind": "task",
+    "result": {
+      "aae_id": "urn:uuid:a6eb5580-13f8-5b11-8c2e-4774f3335f22",
+      "action": "pay",
+      "draft": "draft-kroehl-agentic-trust-aae-02",
+      "issuer": "did:example:issuer",
+      "request_digest": "sha256:84559612f1f46ec0a03f8c448905af075ba4edf66e529b15b50f69c85a68b59a",
+      "skill": "place-order",
+      "steps_passed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "subject": "did:example:buyer",
+      "verdict": "ACCEPT",
+      "verified_at": "2026-10-30T20:15:00Z"
+    },
+    "skill_invoked": true,
+    "skill_outcome": "succeeded",
+    "task_id": "task-037b0f60-88be-5a97-9dae-a6d18aee439a",
+    "task_state": "TASK_STATE_COMPLETED"
+  },
+  "request_part": {
+    "skill": "place-order",
+    "transaction": {
+      "amount": 120,
+      "currency": "EUR",
+      "items": [
+        {
+          "qty": 20,
+          "sku": "PAPER-A4"
+        }
+      ]
+    }
+  },
+  "scored": {
+    "case_id": "XR-06",
+    "expected": {
+      "kind": "task",
+      "request_digest": "sha256:84559612f1f46ec0a03f8c448905af075ba4edf66e529b15b50f69c85a68b59a",
+      "task_id_differs_from": "XR-01",
+      "task_state": "TASK_STATE_COMPLETED",
+      "verdict": "ACCEPT"
+    },
+    "notes": [],
+    "pass": true,
+    "receiver": {
+      "jsonrpc_code": null,
+      "kind": "task",
+      "reason_code": null,
+      "request_digest": "sha256:84559612f1f46ec0a03f8c448905af075ba4edf66e529b15b50f69c85a68b59a",
+      "skill_invoked": true,
+      "step": null,
+      "steps_passed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "task_id": "task-037b0f60-88be-5a97-9dae-a6d18aee439a",
+      "task_state": "TASK_STATE_COMPLETED",
+      "verdict": "ACCEPT"
+    },
+    "title": "Same request as XR-01 again: same request_digest, different task id (spec 8.3)"
+  }
+}

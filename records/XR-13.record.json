@@ -1,0 +1,46 @@
+{
+  "aae_jws_sha256": null,
+  "aae_variant": "none",
+  "activate": true,
+  "case_id": "XR-13",
+  "challenge_nonce": null,
+  "challenge_response_variant": "valid",
+  "receiver_result": {
+    "jsonrpc_code": -32602,
+    "kind": "error",
+    "reason_code": "aae_missing",
+    "result": null,
+    "task_id": null,
+    "task_state": null
+  },
+  "request_part": {
+    "skill": "place-order",
+    "transaction": {
+      "amount": 120,
+      "currency": "EUR"
+    }
+  },
+  "scored": {
+    "case_id": "XR-13",
+    "expected": {
+      "jsonrpc_code": -32602,
+      "kind": "error",
+      "reason_code": "aae_missing"
+    },
+    "notes": [],
+    "pass": true,
+    "receiver": {
+      "jsonrpc_code": -32602,
+      "kind": "error",
+      "reason_code": "aae_missing",
+      "request_digest": null,
+      "skill_invoked": null,
+      "step": null,
+      "steps_passed": null,
+      "task_id": null,
+      "task_state": null,
+      "verdict": null
+    },
+    "title": "Extension activated, AAE missing"
+  }
+}

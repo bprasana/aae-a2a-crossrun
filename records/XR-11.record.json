@@ -1,0 +1,55 @@
+{
+  "aae_jws_sha256": "ba45ec32593d984f64cc500e72577649c4bc71bcfbe1f5e7b9146df6ca7706d8",
+  "aae_variant": "other_domain",
+  "activate": true,
+  "case_id": "XR-11",
+  "challenge_nonce": "s10Y7EiYzPZJwheX8xYyug.1793391600.mR7uECU3eka9whwBr5afCAgOn2oCyS7PW6hSrqlb4Mk",
+  "challenge_response_variant": "valid",
+  "receiver_result": {
+    "kind": "task",
+    "result": {
+      "draft": "draft-kroehl-agentic-trust-aae-02",
+      "reason_code": "domain_not_in_allowlist",
+      "request_digest": "sha256:7081684b67799fdd4045a25d028f770a8254746ff279dbabb0486bdb7eeb4176",
+      "step": 7,
+      "step_name": "constraints",
+      "verdict": "REJECT"
+    },
+    "skill_invoked": false,
+    "task_id": "task-b298bfbc-01b2-5751-8751-f0f873fc33b0",
+    "task_state": "TASK_STATE_REJECTED"
+  },
+  "request_part": {
+    "skill": "place-order",
+    "transaction": {
+      "amount": 120,
+      "currency": "EUR"
+    }
+  },
+  "scored": {
+    "case_id": "XR-11",
+    "expected": {
+      "kind": "task",
+      "reason_code": "domain_not_in_allowlist",
+      "request_digest": "sha256:7081684b67799fdd4045a25d028f770a8254746ff279dbabb0486bdb7eeb4176",
+      "step": 7,
+      "task_state": "TASK_STATE_REJECTED",
+      "verdict": "REJECT"
+    },
+    "notes": [],
+    "pass": true,
+    "receiver": {
+      "jsonrpc_code": null,
+      "kind": "task",
+      "reason_code": "domain_not_in_allowlist",
+      "request_digest": "sha256:7081684b67799fdd4045a25d028f770a8254746ff279dbabb0486bdb7eeb4176",
+      "skill_invoked": false,
+      "step": 7,
+      "steps_passed": null,
+      "task_id": "task-b298bfbc-01b2-5751-8751-f0f873fc33b0",
+      "task_state": "TASK_STATE_REJECTED",
+      "verdict": "REJECT"
+    },
+    "title": "allowed_domains does not name the server's audience host"
+  }
+}

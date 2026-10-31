@@ -1,0 +1,74 @@
+{
+  "aae_jws_sha256": "3fe53a449e1ed47a2e148f617c2a9ba84ab57a59bad9ab408c72707213d7a27d",
+  "aae_variant": "valid",
+  "activate": true,
+  "case_id": "XR-05",
+  "challenge_nonce": "pr70QEIU-YwlWpEOXou8Yg.1793391600.5lpsdMtKR6lvZX7ddqFix3UKFy62UB53EP-5ZpPKf-c",
+  "challenge_response_variant": "valid",
+  "receiver_result": {
+    "kind": "task",
+    "result": {
+      "aae_id": "urn:uuid:0f7bc715-9622-5b4a-acd2-35ffcea61d8e",
+      "action": "pay",
+      "draft": "draft-kroehl-agentic-trust-aae-02",
+      "issuer": "did:example:issuer",
+      "request_digest": "sha256:7081684b67799fdd4045a25d028f770a8254746ff279dbabb0486bdb7eeb4176",
+      "skill": "place-order",
+      "steps_passed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "subject": "did:example:buyer",
+      "verdict": "ACCEPT",
+      "verified_at": "2026-10-30T20:15:00Z"
+    },
+    "skill_invoked": true,
+    "skill_outcome": "succeeded",
+    "task_id": "task-2cdbc887-1471-5ae9-b1f1-0b1f671b372d",
+    "task_state": "TASK_STATE_COMPLETED"
+  },
+  "request_part": {
+    "skill": "place-order",
+    "transaction": {
+      "amount": 120,
+      "currency": "EUR"
+    }
+  },
+  "scored": {
+    "case_id": "XR-05",
+    "expected": {
+      "kind": "task",
+      "request_digest": "sha256:7081684b67799fdd4045a25d028f770a8254746ff279dbabb0486bdb7eeb4176",
+      "task_state": "TASK_STATE_COMPLETED",
+      "verdict": "ACCEPT"
+    },
+    "notes": [],
+    "pass": true,
+    "receiver": {
+      "jsonrpc_code": null,
+      "kind": "task",
+      "reason_code": null,
+      "request_digest": "sha256:7081684b67799fdd4045a25d028f770a8254746ff279dbabb0486bdb7eeb4176",
+      "skill_invoked": true,
+      "step": null,
+      "steps_passed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "task_id": "task-2cdbc887-1471-5ae9-b1f1-0b1f671b372d",
+      "task_state": "TASK_STATE_COMPLETED",
+      "verdict": "ACCEPT"
+    },
+    "title": "Request part of Appendix A (vector B.4)"
+  }
+}
